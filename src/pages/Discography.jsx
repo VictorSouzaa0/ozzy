@@ -1,0 +1,1 @@
+import styles from "../modules/Discography.module.css"
