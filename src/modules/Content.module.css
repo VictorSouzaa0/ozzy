@@ -1,0 +1,21 @@
+
+
+h1{
+    padding-top: 100px;
+
+}
+.img{
+    padding-top: 100px ;
+    width: 40%;
+}
+
+@media (max-width:425px) {
+    
+    .img{
+        width: 80%;
+    }
+    .content{
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -1,15 +1,13 @@
 import styles from "../modules/Navbar.module.css";
 
-
-
 export default function Navbar(){
     return(
         <nav>
             <button className={styles.navButton}>
-                Discography
+                Discografia
             </button>
             <button className={styles.navButton}>
-                Most Success
+                Maiores Sucessos
             </button>
         </nav>
     )
