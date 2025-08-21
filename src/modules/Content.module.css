@@ -1,12 +1,21 @@
-
+section{
+    display: flex;
+    justify-content: center;
+}
 
 h1{
     padding-top: 100px;
 
 }
+
+.about{
+    font-weight: 300;
+
+}
+
 .img{
     padding-top: 100px ;
-    width: 40%;
+    padding-right: 20px;
 }
 
 @media (max-width:425px) {
@@ -17,5 +26,8 @@ h1{
     .content{
         display: flex;
         justify-content: center;
+    }
+    section{
+        display: grid;
     }
 }
