@@ -1,0 +1,88 @@
+.discographyPage {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.discographyPage h1 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+/*
+  Grid para os álbuns
+  Em telas pequenas (mobile-first), temos 1 coluna.
+*/
+.albumGrid {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.albumCard {
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden; 
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.albumCard:hover {
+    transform: scale(1.03); 
+}
+
+.albumCover {
+    width: 100%;
+    height: auto;
+}
+
+.albumInfo {
+    padding: 1.5rem;
+}
+
+.albumInfo h2 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.albumYear {
+    color: #aaa;
+    margin-top: 0;
+    font-style: italic;
+}
+
+.songList {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 1rem;
+    color: #ccc;
+}
+
+.songList li {
+    padding: 0.3rem 0;
+    border-bottom: 1px solid #333;
+}
+
+.songList li:last-child {
+    border-bottom: none; 
+}
+
+
+/*
+  Media Query para telas maiores
+*/
+@media (min-width: 768px) {
+    .albumGrid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .albumGrid {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}

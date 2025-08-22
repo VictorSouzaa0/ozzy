@@ -1,15 +1,17 @@
-import { Routes, BrowserRouter, Route } from "react-router";
+import { Routes, Route } from "react-router-dom"; // Não precisa mais do BrowserRouter aqui
 import Home from "../pages/Home";
 import Discography from "../pages/Discography";
+import Navbar from "../components/Navbar";
 
+export function AppRoutes() {
+    return (
 
-export function AppRoutes(){
-    return(
-        <BrowserRouter>
+        <>
+            <Navbar />
             <Routes>
-                <Route path="/" element={<Home/>} />
-                <Route path="/discography" element={Discography}/>
+                <Route path="/" element={<Home />} />
+                <Route path="/discography" element={<Discography />} />
             </Routes>
-        </BrowserRouter>
-    )
+        </>
+    );
 }

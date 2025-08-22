@@ -1,33 +1,65 @@
-section{
-    display: flex;
-    justify-content: center;
+/*
+  Define o container principal.
+  Ele organiza a imagem e o texto.
+*/
+.container {
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  max-width: 1200px;
+  text-align: center;
 }
 
-h1{
-    padding-top: 100px;
-
+/*
+  Esta é a caixa que segura a imagem.
+  Ajuda a controlar o tamanho da imagem.
+*/
+.imageWrapper {
+  width: 100%;
+  max-width: 400px;
 }
 
-.about{
-    font-weight: 300;
-
+/*
+  Estilos para a tag da imagem.
+*/
+.img {
+  width: 100%;
+  height: auto;
+    display: block;
 }
 
-.img{
-    padding-top: 100px ;
-    padding-right: 20px;
+/*
+  Estilos para os títulos h1 e h2 que estão dentro
+  da caixa de texto.
+*/
+.textWrapper > h1,
+.textWrapper > h2 {
+  font-weight: 300;
+  padding-top: 0;
 }
 
-@media (max-width:425px) {
-    
-    .img{
-        width: 80%;
-    }
-    .content{
-        display: flex;
-        justify-content: center;
-    }
-    section{
-        display: grid;
-    }
+
+
+@media (min-width: 768px) {
+
+  /*
+    Muda o container em telas grandes.
+  */
+  .container {
+    flex-direction: row;
+    text-align: left;
+    gap: 2rem;
+  }
+
+  .imageWrapper, .textWrapper {
+    flex: 1;
+  }
+
+
+  .container.reverse {
+    flex-direction: row-reverse;
+  }
 }

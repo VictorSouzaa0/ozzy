@@ -1,19 +1,34 @@
 import styles from "../modules/Content.module.css";
-import child from "../assets/images/childOzzy.png"
 
 
+// Componente com a IMAGEM À ESQUERDA e o texto à direita.
 
-export function Content() {
+export function ContentLeft({ imageUrl, imageAlt, children }) {
     return (
-        <section>
-            <div className={styles.content}>
-                <img className={styles.img} src={child} alt="ozzy" />
+        <section className={styles.container}>
+            <div className={styles.imageWrapper}>
+                <img className={styles.img} src={imageUrl} alt={imageAlt} />
             </div>
-            <h1 className={styles.about}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci consequuntur quas, quasi numquam assumenda dolore explicabo iusto esse dolorum quo unde quos voluptatem ullam facere laborum vitae sed iure est?</h1>
-        
+            <div className={styles.textWrapper}>
+                {children}
+            </div>
         </section>
-        
-    )
+    );
 }
 
 
+// Componente com a IMAGEM À DIREITA e o texto à esquerda.
+
+export function ContentRight({ imageUrl, imageAlt, children }) {
+    return (
+        /* A classe 'reverse' vai inverter a ordem em telas grandes */
+        <section className={`${styles.container} ${styles.reverse}`}>
+            <div className={styles.imageWrapper}>
+                <img className={styles.img} src={imageUrl} alt={imageAlt} />
+            </div>
+            <div className={styles.textWrapper}>
+                {children}
+            </div>
+        </section>
+    );
+}
