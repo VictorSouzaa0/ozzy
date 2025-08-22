@@ -1,15 +1,14 @@
-import './App.css'
-import Header from './components/Header'
-import { AppRoutes } from './routes/Routes'
+import './App.css';
+import Navbar from './components/Navbar'; // Importe a Navbar aqui
+import { AppRoutes } from './routes/Routes';
 
 function App() {
-
   return (
     <>
-        <Header/>
-      <AppRoutes/>
+      <Navbar />
+      <AppRoutes /> 
     </>
-  )
+  );
 }
 
-export default App
+export default App;

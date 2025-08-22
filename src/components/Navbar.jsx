@@ -11,7 +11,7 @@ export default function Navbar() {
                     </Link>
                 </li>
                 <li>
-                    <Link to="/discografia" className={styles.navLink}>
+                    <Link to="/discography" className={styles.navLink}>
                         Discografia
                     </Link>
                 </li>

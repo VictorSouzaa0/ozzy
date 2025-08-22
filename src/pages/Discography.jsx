@@ -1,6 +1,9 @@
+// src/pages/Discography.jsx
+
 import styles from '../modules/Discography.module.css';
 
-// Guardando os dados dos álbuns em um array de objetos
+// As importações de imagens locais foram removidas
+
 const albumsData = [
     {
         year: "1980",
@@ -51,6 +54,7 @@ const albumsData = [
     {
         year: "1991",
         title: "No More Tears",
+        // URL corrigida para o quarto álbum
         imageUrl: "https://upload.wikimedia.org/wikipedia/en/0/04/Ozzy-osbourne-no-more-tears.jpg",
         songs: [
             "Mr. Tinkertrain",
@@ -68,6 +72,7 @@ const albumsData = [
     }
 ];
 
+// O resto do componente continua o mesmo
 export default function Discography() {
     return (
         <div className={styles.discographyPage}>

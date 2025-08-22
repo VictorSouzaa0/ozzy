@@ -1,5 +1,6 @@
 import { ContentLeft, ContentRight } from "./Content";
 import ozzyImage from "../assets/images/childOzzy.png"; 
+import ozzyAdult from "../assets/images/goatOzzy.jpg";
 
 export default function Main(){
     return(
@@ -19,7 +20,7 @@ export default function Main(){
             
             {/* Usando o componente com a imagem na DIREITA */}
             <ContentRight
-                imageUrl={ozzyImage}
+                imageUrl={ozzyAdult}
                 imageAlt="Ozzy Osbourne no palco"
             >
                 <h2>Carreira Solo</h2>
