@@ -8,7 +8,7 @@ const albumsData = [
     {
         year: "1980",
         title: "Blizzard of Ozz",
-        imageUrl: "https://upload.wikimedia.org/wikipedia/en/9/90/Ozzy_Osbourne_-_Blizzard_of_Ozz.jpg",
+        imageUrl: "https://upload.wikimedia.org/wikipedia/en/thumb/2/23/Blizzard_of_ozz.jpg/250px-Blizzard_of_ozz.jpg",
         songs: [
             "I Don't Know",
             "Crazy Train",
@@ -24,7 +24,7 @@ const albumsData = [
     {
         year: "1981",
         title: "Diary of a Madman",
-        imageUrl: "https://upload.wikimedia.org/wikipedia/en/7/74/Ozzy_Osbourne_-_Diary_of_a_Madman.jpg",
+        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwzx4dZr-EaAcY7c5tuSyJnUGrH8F-s1S4sw&s",
         songs: [
             "Over the Mountain",
             "Flying High Again",
@@ -39,7 +39,7 @@ const albumsData = [
     {
         year: "1983",
         title: "Bark at the Moon",
-        imageUrl: "https://upload.wikimedia.org/wikipedia/en/0/0f/Ozzy_Osbourne_-_Bark_at_the_Moon.jpg",
+        imageUrl: "https://upload.wikimedia.org/wikipedia/en/thumb/9/97/Bark_at_the_moon.jpg/250px-Bark_at_the_moon.jpg",
         songs: [
             "Bark at the Moon",
             "You're No Different",
@@ -54,8 +54,7 @@ const albumsData = [
     {
         year: "1991",
         title: "No More Tears",
-        // URL corrigida para o quarto álbum
-        imageUrl: "https://upload.wikimedia.org/wikipedia/en/0/04/Ozzy-osbourne-no-more-tears.jpg",
+        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHd9WKqu3u95yG3ONbiBapEuoZ98u9XpVFOw&s",
         songs: [
             "Mr. Tinkertrain",
             "I Don't Want to Change the World",
@@ -72,7 +71,7 @@ const albumsData = [
     }
 ];
 
-// O resto do componente continua o mesmo
+
 export default function Discography() {
     return (
         <div className={styles.discographyPage}>
