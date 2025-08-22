@@ -1,12 +1,14 @@
 import './App.css';
-import Navbar from './components/Navbar'; // Importe a Navbar aqui
+import Navbar from './components/Navbar';
+import Footer from './components/Footer'; 
 import { AppRoutes } from './routes/Routes';
 
 function App() {
   return (
     <>
       <Navbar />
-      <AppRoutes /> 
+      <AppRoutes />
+      <Footer />
     </>
   );
 }

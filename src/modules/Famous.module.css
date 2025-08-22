@@ -1,0 +1,52 @@
+.famousPage {
+    padding: 2rem 1rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+.famousPage h1 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.famousPage p {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 2.5rem;
+}
+
+.songContainer {
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.songList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.songItem {
+    border-bottom: 1px solid #333;
+}
+
+.songItem:last-child {
+    border-bottom: none;
+}
+
+.songLink {
+    display: block;
+    padding: 1rem;
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.songLink:hover {
+    background-color: #333;
+    color: #ffffff;
+}

@@ -11,11 +11,15 @@ export default function Navbar() {
                     </Link>
                 </li>
                 <li>
-                    <Link to="/discography" className={styles.navLink}>
+                    <Link to="/discografia" className={styles.navLink}>
                         Discografia
                     </Link>
                 </li>
-
+                <li>
+                    <Link to="/sucessos" className={styles.navLink}>
+                        Maiores Sucessos
+                    </Link>
+                </li>
             </ul>
         </nav>
     );
