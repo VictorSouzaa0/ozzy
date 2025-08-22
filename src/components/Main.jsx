@@ -1,7 +1,7 @@
 import { ContentLeft, ContentRight } from "./Content";
 import ozzyImage from "../assets/images/childOzzy.png"; 
 import ozzyAdult from "../assets/images/goatOzzy.jpg";
-
+import '../App.css';
 export default function Main(){
     return(
         <main>
